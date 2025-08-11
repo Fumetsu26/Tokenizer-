@@ -15,5 +15,6 @@ function decode(tokens){
 
 let prompt = "Hello nice to meet you!!"
 let tokenOfPrompt = encode(prompt)
-console.log(tokenOfPrompt)
-console.log(decode(tokenOfPrompt))
+console.log("My Prompt :" ,prompt)
+console.log("Pompt in form of Tokens : ",tokenOfPrompt)
+console.log("Tokens converted back to Prompt : ", decode(tokenOfPrompt))
