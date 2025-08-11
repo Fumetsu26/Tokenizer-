@@ -1,4 +1,4 @@
-const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ~!@#$%^&*(){}[]"
+const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ~!@#$%^&*(){}[],.?'\|"
 const charToToken={}
 const tokenToChar ={}
 
@@ -13,7 +13,7 @@ function decode(tokens){
     return tokens.map(tokens => tokenToChar[tokens]).join("")
 }
 
-let prompt = "Hello nice to meet you!!"
+let prompt = "Hello!!, Welcome to the GenAi With JS Cohort"
 let tokenOfPrompt = encode(prompt)
 console.log("My Prompt :" ,prompt)
 console.log("Pompt in form of Tokens : ",tokenOfPrompt)
