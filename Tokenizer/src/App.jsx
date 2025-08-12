@@ -11,8 +11,8 @@ const charToId = {};
 const idToChar = {};
 
 chars.split("").forEach((char, index) => {
-  charToId[char] = index + 1;
-  idToChar[index + 1] = char;
+  charToId[char] = index + 27;
+  idToChar[index + 27] = char;
 });
 
 function encode(text) {
